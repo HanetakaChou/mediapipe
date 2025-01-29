@@ -1,0 +1,8 @@
+[submodule "thirdparty/mediapipe"]
+	path = thirdparty/mediapipe
+	url = git@github.com:HanetakaChou/mediapipe.git
+	branch = master
+[submodule "thirdparty/opencv"]
+	path = thirdparty/opencv
+	url = git@github.com:HanetakaChou/mediapipe.git
+	branch = opencv

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{91a26b38-24a7-4a02-b969-a20073025a75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{13bca495-fae7-4816-a84d-a00244370d49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\mediapipe">
+      <UniqueIdentifier>{39ebf4c8-8d3d-4502-98f6-c6326be6d814}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\mediapipe\bin">
+      <UniqueIdentifier>{36534cf6-ba84-4454-bd83-b73ad8ff0bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\mediapipe\bin\x64">
+      <UniqueIdentifier>{6042cddf-5970-4bb5-bc30-1f4e77de72ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\mediapipe\models">
+      <UniqueIdentifier>{324cff0a-a157-494a-af0b-5ba936318437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models">
+      <UniqueIdentifier>{10f33880-a9c6-4cd5-9955-e18fd6716f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\opencv">
+      <UniqueIdentifier>{de2c3c01-e9f4-4c74-bb7c-007a593ab6e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\opencv\bin">
+      <UniqueIdentifier>{f4f73aab-ae69-4423-b90f-9179778ae5c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\opencv\bin\x64">
+      <UniqueIdentifier>{d1dbf183-8803-4055-ac68-3c734cd10979}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\models\face_landmarker_task.cpp">
+      <Filter>models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\models\pose_landmarker_task.cpp">
+      <Filter>models</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="..\thirdparty\mediapipe\bin\win32\x64\mediapipe_c.dll">
+      <Filter>thirdparty\mediapipe\bin\x64</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\thirdparty\opencv\build\x64\vc15\bin\opencv_world3410.dll">
+      <Filter>thirdparty\opencv\bin\x64</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\thirdparty\opencv\build\x64\vc15\bin\opencv_ffmpeg3410_64.dll">
+      <Filter>thirdparty\opencv\bin\x64</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\thirdparty\mediapipe\models\face_landmarker.task">
+      <Filter>thirdparty\mediapipe\models</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\thirdparty\mediapipe\models\pose_landmarker_full.task">
+      <Filter>thirdparty\mediapipe\models</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\models\bin2h.py">
+      <Filter>models</Filter>
+    </None>
+  </ItemGroup>
+</Project>
